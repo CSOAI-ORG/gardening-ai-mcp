@@ -1,0 +1,10 @@
+name: gardening-ai-mcp
+description: "MEOK AI Labs — Built by MEOK AI Labs | https://meok.ai"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/gardening-ai-mcp
+license: MIT
+categories: [Hobbies, Gardening]
+tags: [gardening, plant-care, horticulture, garden-planning, agriculture]
+runtime: python
+entrypoint: server.py
