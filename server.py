@@ -13,10 +13,7 @@ from typing import Optional
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP(
-    "gardening-ai",
-    version="1.0.0",
-    description="Gardening AI - plant ID, watering, soil, companion planting, pest diagnosis",
-)
+    "gardening-ai")
 
 # ---------------------------------------------------------------------------
 # Rate limiting
@@ -138,8 +135,7 @@ _SOIL_TYPES = {
 
 @mcp.tool()
 def identify_plant(
-    characteristics: dict,
-) -> dict:
+    characteristics: dict) -> dict:
     """Identify a plant from its characteristics and get care info.
 
     Args:
@@ -193,8 +189,7 @@ def generate_watering_schedule(
     plants: list[str],
     climate: str = "temperate",
     season: str = "summer",
-    container_grown: bool = False,
-) -> dict:
+    container_grown: bool = False) -> dict:
     """Generate a watering schedule for your plants.
 
     Args:
@@ -246,8 +241,7 @@ def generate_watering_schedule(
 def analyze_soil(
     soil_type: str,
     ph: float = 6.5,
-    plants_planned: Optional[list[str]] = None,
-) -> dict:
+    plants_planned: Optional[list[str]] = None) -> dict:
     """Analyze soil conditions and get amendment recommendations.
 
     Args:
@@ -296,8 +290,7 @@ def analyze_soil(
 
 @mcp.tool()
 def companion_planting(
-    plants: list[str],
-) -> dict:
+    plants: list[str]) -> dict:
     """Check companion planting compatibility for a group of plants.
 
     Args:
@@ -343,8 +336,7 @@ def companion_planting(
 @mcp.tool()
 def diagnose_pest(
     symptoms: list[str],
-    affected_plant: Optional[str] = None,
-) -> dict:
+    affected_plant: Optional[str] = None) -> dict:
     """Diagnose garden pests from observed symptoms and get treatment plans.
 
     Args:
