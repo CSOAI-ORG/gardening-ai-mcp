@@ -6,6 +6,11 @@ Plant identification, watering schedules, soil analysis,
 companion planting, and pest diagnosis.
 """
 
+
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
+from auth_middleware import check_access
+
 import time
 from datetime import datetime, timezone
 from typing import Optional
@@ -135,7 +140,7 @@ _SOIL_TYPES = {
 
 @mcp.tool()
 def identify_plant(
-    characteristics: dict) -> dict:
+    characteristics: dict, api_key: str = "") -> dict:
     """Identify a plant from its characteristics and get care info.
 
     Args:
@@ -143,6 +148,10 @@ def identify_plant(
                         family, sun_preference, leaf_description, flower_color,
                         height_cm, fragrant (bool), edible (bool).
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -189,7 +198,7 @@ def generate_watering_schedule(
     plants: list[str],
     climate: str = "temperate",
     season: str = "summer",
-    container_grown: bool = False) -> dict:
+    container_grown: bool = False, api_key: str = "") -> dict:
     """Generate a watering schedule for your plants.
 
     Args:
@@ -198,6 +207,10 @@ def generate_watering_schedule(
         season: spring | summer | autumn | winter.
         container_grown: Whether plants are in containers (need more frequent watering).
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -241,7 +254,7 @@ def generate_watering_schedule(
 def analyze_soil(
     soil_type: str,
     ph: float = 6.5,
-    plants_planned: Optional[list[str]] = None) -> dict:
+    plants_planned: Optional[list[str]] = None, api_key: str = "") -> dict:
     """Analyze soil conditions and get amendment recommendations.
 
     Args:
@@ -249,6 +262,10 @@ def analyze_soil(
         ph: Measured soil pH (1.0 - 14.0).
         plants_planned: Plants you intend to grow.
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -290,12 +307,16 @@ def analyze_soil(
 
 @mcp.tool()
 def companion_planting(
-    plants: list[str]) -> dict:
+    plants: list[str], api_key: str = "") -> dict:
     """Check companion planting compatibility for a group of plants.
 
     Args:
         plants: List of plant names to check together.
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -336,13 +357,17 @@ def companion_planting(
 @mcp.tool()
 def diagnose_pest(
     symptoms: list[str],
-    affected_plant: Optional[str] = None) -> dict:
+    affected_plant: Optional[str] = None, api_key: str = "") -> dict:
     """Diagnose garden pests from observed symptoms and get treatment plans.
 
     Args:
         symptoms: Observed symptoms (e.g. holes_in_leaves, yellowing, sticky_residue, webbing).
         affected_plant: Name of affected plant (optional).
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 

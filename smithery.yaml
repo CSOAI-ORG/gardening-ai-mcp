@@ -1,10 +1,52 @@
 name: gardening-ai-mcp
-description: "MEOK AI Labs — Built by MEOK AI Labs | https://meok.ai"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/gardening-ai-mcp
-license: MIT
-categories: [Hobbies, Gardening]
-tags: [gardening, plant-care, horticulture, garden-planning, agriculture]
-runtime: python
-entrypoint: server.py
+description: '**Horticulture Intelligence**'
+version: 1.0.0
+tools:
+- name: identify_plant
+  description: Identify a plant from its characteristics and get care info.
+  parameters:
+  - name: characteristics
+    type: object
+    required: true
+- name: generate_watering_schedule
+  description: Generate a watering schedule for your plants.
+  parameters:
+  - name: plants
+    type: array
+    required: true
+  - name: climate
+    type: string
+    required: false
+  - name: season
+    type: string
+    required: false
+  - name: container_grown
+    type: boolean
+    required: false
+- name: analyze_soil
+  description: Analyze soil conditions and get amendment recommendations.
+  parameters:
+  - name: soil_type
+    type: string
+    required: true
+  - name: ph
+    type: number
+    required: false
+  - name: plants_planned
+    type: array
+    required: false
+- name: companion_planting
+  description: Check companion planting compatibility for a group of plants.
+  parameters:
+  - name: plants
+    type: array
+    required: true
+- name: diagnose_pest
+  description: Diagnose garden pests from observed symptoms and get treatment plans.
+  parameters:
+  - name: symptoms
+    type: array
+    required: true
+  - name: affected_plant
+    type: string
+    required: false

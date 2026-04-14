@@ -1,24 +1,114 @@
 {
   "name": "gardening-ai-mcp",
-  "description": "MEOK AI Labs \u2014 Built by MEOK AI Labs | https://meok.ai",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/gardening-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "**Horticulture Intelligence**",
+  "version": "1.0.0",
   "tools": [
-    "identify_plant",
-    "generate_watering_schedule",
-    "analyze_soil",
-    "companion_planting",
-    "diagnose_pest"
-  ],
-  "categories": [
-    "Hobbies",
-    "Gardening"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "identify_plant",
+      "description": "Identify a plant from its characteristics and get care info.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characteristics": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "characteristics"
+        ]
+      }
+    },
+    {
+      "name": "generate_watering_schedule",
+      "description": "Generate a watering schedule for your plants.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "plants": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "climate": {
+            "type": "string"
+          },
+          "season": {
+            "type": "string"
+          },
+          "container_grown": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "plants"
+        ]
+      }
+    },
+    {
+      "name": "analyze_soil",
+      "description": "Analyze soil conditions and get amendment recommendations.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "soil_type": {
+            "type": "string"
+          },
+          "ph": {
+            "type": "number"
+          },
+          "plants_planned": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "required": [
+          "soil_type"
+        ]
+      }
+    },
+    {
+      "name": "companion_planting",
+      "description": "Check companion planting compatibility for a group of plants.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "plants": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "plants"
+        ]
+      }
+    },
+    {
+      "name": "diagnose_pest",
+      "description": "Diagnose garden pests from observed symptoms and get treatment plans.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "symptoms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "affected_plant": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "required": [
+          "symptoms"
+        ]
+      }
+    }
+  ]
 }
