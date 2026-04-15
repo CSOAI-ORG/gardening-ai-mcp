@@ -1,0 +1,56 @@
+{
+  "name": "gardening-ai",
+  "description": "\u0001",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/gardening-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "identify_plant",
+      "description": "Identify a plant from its characteristics and get care info."
+    },
+    {
+      "name": "generate_watering_schedule",
+      "description": "Generate a watering schedule for your plants."
+    },
+    {
+      "name": "analyze_soil",
+      "description": "Analyze soil conditions and get amendment recommendations."
+    },
+    {
+      "name": "companion_planting",
+      "description": "Check companion planting compatibility for a group of plants."
+    },
+    {
+      "name": "diagnose_pest",
+      "description": "Diagnose garden pests from observed symptoms and get treatment plans."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
