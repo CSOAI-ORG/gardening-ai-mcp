@@ -1,6 +1,6 @@
 {
   "name": "gardening-ai-mcp",
-  "description": "**Horticulture Intelligence**",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": [
     {
@@ -25,10 +25,7 @@
         "type": "object",
         "properties": {
           "plants": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "array"
           },
           "climate": {
             "type": "string"
@@ -58,11 +55,7 @@
             "type": "number"
           },
           "plants_planned": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
+            "type": "array"
           }
         },
         "required": [
@@ -77,10 +70,7 @@
         "type": "object",
         "properties": {
           "plants": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "array"
           }
         },
         "required": [
@@ -95,14 +85,10 @@
         "type": "object",
         "properties": {
           "symptoms": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "array"
           },
           "affected_plant": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "required": [

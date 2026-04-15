@@ -17,8 +17,7 @@ from typing import Optional
 
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP(
-    "gardening-ai")
+mcp = FastMCP("gardening-ai", instructions="")
 
 # ---------------------------------------------------------------------------
 # Rate limiting
