@@ -1,7 +1,7 @@
 {
   "name": "gardening-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs — gardening MCP Server",
+  "description": "AI-powered gardening ai MCP server for agents. Supports identify plant, generate watering schedule, analyze soil. By MEOK AI Labs.",
   "main": "server.py",
   "mcp": {
     "name": "gardening",
@@ -9,10 +9,22 @@
     "homepage": "https://meok.ai",
     "repository": "https://github.com/CSOAI-ORG/gardening-ai-mcp",
     "runtime": "python",
-    "tags": ["mcp", "mcp-server", "meok-ai-labs", "ai-tools"]
+    "tags": [
+      "mcp",
+      "mcp-server",
+      "meok-ai-labs",
+      "ai-tools"
+    ]
   },
-  "keywords": ["mcp", "mcp-server", "meok-ai-labs"],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "meok-ai-labs"
+  ],
   "author": "MEOK AI Labs <nicholas@meok.ai>",
   "license": "MIT",
-  "repository": {"type": "git", "url": "https://github.com/CSOAI-ORG/gardening-ai-mcp"}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/gardening-ai-mcp"
+  }
 }

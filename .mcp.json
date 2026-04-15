@@ -1,6 +1,6 @@
 {
   "name": "gardening-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 \u0001",
+  "description": "AI-powered gardening ai MCP server for agents. Supports identify plant, generate watering schedule, analyze soil. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {

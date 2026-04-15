@@ -1,5 +1,6 @@
 name: gardening-ai-mcp
-description: "\x01"
+description: AI-powered gardening ai MCP server for agents. Supports identify plant,
+  generate watering schedule, analyze soil. By MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: identify_plant
