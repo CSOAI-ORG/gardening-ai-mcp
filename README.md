@@ -1,60 +1,38 @@
-# Gardening AI MCP Server
+<div align="center">
 
-**Horticulture Intelligence**
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/gardening-ai-mcp)](https://github.com/CSOAI-ORG/gardening-ai-mcp/stargazers)
 
-Built by [MEOK AI Labs](https://meok.ai)
+# ugardeningU aiU mcp
+
+****Horticulture Intelligence****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/gardening-ai-mcp)](https://www.npmjs.com/package/@meok-ai/gardening-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/gardening-ai-mcp/issues)
+
+</div>
 
 ---
 
-An MCP server for gardeners and horticulturists. Identify plants, generate watering schedules adjusted for climate and season, analyze soil conditions, check companion planting compatibility, and diagnose pests with organic treatment plans.
-
-## Tools
-
-| Tool | Description |
-|------|-------------|
-| `identify_plant` | Identify plants from characteristics and get full care profiles |
-| `generate_watering_schedule` | Climate and season-adjusted watering schedules |
-| `analyze_soil` | Soil analysis with amendment recommendations and plant compatibility |
-| `companion_planting` | Check companion planting compatibility for plant groups |
-| `diagnose_pest` | Diagnose garden pests from symptoms with organic and chemical treatments |
-
-## Quick Start
+## Installation
 
 ```bash
 pip install gardening-ai-mcp
+# or
+npm install -g @meok-ai/gardening-ai-mcp
 ```
 
-### Claude Desktop
+## Quick Start
 
-```json
-{
-  "mcpServers": {
-    "gardening-ai": {
-      "command": "python",
-      "args": ["-m", "server"],
-      "cwd": "/path/to/gardening-ai-mcp"
-    }
-  }
-}
-```
+See the project repository for full documentation and examples.
 
-### Direct Usage
+## Enterprise Support
 
-```bash
-python server.py
-```
-
-## Rate Limits
-
-| Tier | Requests/Hour |
-|------|--------------|
-| Free | 60 |
-| Pro | 5,000 |
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT - see [LICENSE](LICENSE)
-
----
-
-*Part of the MEOK AI Labs MCP Marketplace*
+MIT © [CSOAI](https://csoai.org)
