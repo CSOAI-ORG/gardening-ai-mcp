@@ -1,3 +1,5 @@
+[![gardening-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/gardening-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/gardening-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/gardening-ai-mcp)](https://github.com/CSOAI-ORG/gardening-ai-mcp/stargazers)
