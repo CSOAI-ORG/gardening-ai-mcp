@@ -1,63 +1,78 @@
-<div align="center">
-
 # Gardening Ai MCP
 
-**Gardening AI MCP Server - Horticulture Intelligence**
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/gardening_ai_mcp/)
 
-[![PyPI](https://img.shields.io/pypi/v/meok-gardening-ai-mcp)](https://pypi.org/project/meok-gardening-ai-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-MCP_Server-purple)](https://meok.ai)
+> MEOK AI Labs — gardening-ai-mcp MCP Server
 
-</div>
+MEOK AI Labs — gardening-ai-mcp MCP Server
 
-## Overview
+---
 
-Gardening AI MCP Server - Horticulture Intelligence
-Built by MEOK AI Labs | https://meok.ai
-
-Plant identification, watering schedules, soil analysis,
-companion planting, and pest diagnosis.
-
-## Tools
-
-| Tool | Description |
-|------|-------------|
-| `identify_plant` | Identify a plant from its characteristics and get care info. |
-| `generate_watering_schedule` | Generate a watering schedule for your plants. |
-| `analyze_soil` | Analyze soil conditions and get amendment recommendations. |
-| `companion_planting` | Check companion planting compatibility for a group of plants. |
-| `diagnose_pest` | Diagnose garden pests from observed symptoms and get treatment plans. |
-
-## Installation
+## 🚀 Quick Start
 
 ```bash
-pip install meok-gardening-ai-mcp
+# Install via pip
+pip install gardening_ai_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install gardening-ai-mcp --client claude
 ```
 
-## Usage with Claude Desktop
+## ✨ Features
 
-Add to your Claude Desktop MCP config (`claude_desktop_config.json`):
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-```json
-{
-  "mcpServers": {
-    "gardening-ai": {
-      "command": "python",
-      "args": ["-m", "meok_gardening_ai_mcp.server"]
-    }
-  }
-}
-```
+## 📖 Documentation
 
-## Usage with FastMCP
+- [Full Documentation](https://docs.meok.ai/gardening-ai-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-```python
-from mcp.server.fastmcp import FastMCP
+## 🛡️ Compliance
 
-# This server exposes 5 tool(s) via MCP
-# See server.py for full implementation
-```
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## License
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-MIT © [MEOK AI Labs](https://meok.ai)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
+
+## 🏢 Enterprise
+
+Need custom development, SLA guarantees, or white-label deployment?
+
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
+
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
+
+## 🤝 Part of the MEOK Ecosystem
+
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
+
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
+
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
