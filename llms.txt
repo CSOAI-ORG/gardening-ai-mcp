@@ -1,32 +1,36 @@
-# Gardening Ai MCP
-
-> MEOK AI Labs — gardening-ai-mcp MCP Server
-
-`gardening-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+# gardening-ai-mcp
+# **Gardening AI MCP Server - Horticulture Intelligence**
 
 ## Install
-
 ```bash
 pip install gardening-ai-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx gardening-ai-mcp
-```
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
 
 ## Tools
 
-- `identify_plant` — Identify a plant from its characteristics and get care info.
-- `generate_watering_schedule` — Generate a watering schedule for your plants.
-- `analyze_soil` — Analyze soil conditions and get amendment recommendations.
-- `companion_planting` — Check companion planting compatibility for a group of plants.
-- `diagnose_pest` — Diagnose garden pests from observed symptoms and get treatment plans.
+### `identify_plant`
+Identify a plant from its characteristics and get care info.
 
-## Links
+### `generate_watering_schedule`
+Generate a watering schedule for your plants.
 
-- Source: https://github.com/CSOAI-ORG/gardening-ai-mcp
-- PyPI: https://pypi.org/project/gardening-ai-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+### `analyze_soil`
+Analyze soil conditions and get amendment recommendations.
+
+### `companion_planting`
+Check companion planting compatibility for a group of plants.
+
+### `diagnose_pest`
+Diagnose garden pests from observed symptoms and get treatment plans.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

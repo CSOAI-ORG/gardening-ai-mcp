@@ -1,0 +1,9 @@
+# gardening-ai-mcp - Auto-trigger Rules
+
+When the user asks about gardening, use gardening-ai-mcp tools: identify_plant, generate_watering_schedule, analyze_soil, companion_planting, diagnose_pest
+
+**Gardening AI MCP Server - Horticulture Intelligence**
+
+Install: `pip install gardening-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

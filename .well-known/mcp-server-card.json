@@ -1,0 +1,28 @@
+{
+  "name": "gardening-ai-mcp",
+  "title": "Gardening Ai Mcp",
+  "description": "AI-powered gardening ai MCP server for agents. Supports identify plant, generate watering schedule, analyze soil. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "identify_plant"
+    },
+    {
+      "name": "generate_watering_schedule"
+    },
+    {
+      "name": "analyze_soil"
+    },
+    {
+      "name": "companion_planting"
+    },
+    {
+      "name": "diagnose_pest"
+    }
+  ]
+}
