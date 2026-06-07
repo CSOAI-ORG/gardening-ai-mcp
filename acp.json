@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "gardening-ai-mcp",
+    "description": "Gardening Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "gardening-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "identify_plant",
+      "generate_watering_schedule",
+      "analyze_soil",
+      "companion_planting",
+      "diagnose_pest"
+    ]
+  }
+}

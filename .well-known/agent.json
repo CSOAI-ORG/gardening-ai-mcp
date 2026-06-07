@@ -1,0 +1,68 @@
+{
+  "name": "gardening-ai-mcp",
+  "description": "Gardening Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/gardening-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "identify_plant",
+      "name": "Identify Plant",
+      "description": "identify_plant via gardening-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_watering_schedule",
+      "name": "Generate Watering Schedule",
+      "description": "generate_watering_schedule via gardening-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "analyze_soil",
+      "name": "Analyze Soil",
+      "description": "analyze_soil via gardening-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "companion_planting",
+      "name": "Companion Planting",
+      "description": "companion_planting via gardening-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "diagnose_pest",
+      "name": "Diagnose Pest",
+      "description": "diagnose_pest via gardening-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
