@@ -1,0 +1,32 @@
+# Gardening Ai MCP
+
+> MEOK AI Labs — gardening-ai-mcp MCP Server
+
+`gardening-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install gardening-ai-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx gardening-ai-mcp
+```
+
+## Tools
+
+- `identify_plant` — Identify a plant from its characteristics and get care info.
+- `generate_watering_schedule` — Generate a watering schedule for your plants.
+- `analyze_soil` — Analyze soil conditions and get amendment recommendations.
+- `companion_planting` — Check companion planting compatibility for a group of plants.
+- `diagnose_pest` — Diagnose garden pests from observed symptoms and get treatment plans.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/gardening-ai-mcp
+- PyPI: https://pypi.org/project/gardening-ai-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
